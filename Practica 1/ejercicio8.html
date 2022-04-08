@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>  
+	
+</head>
+<body>
+	<h1 align="center">PRACTICA 1</h1>
+	<h2>Ejercicio 8</h2>
+	
+	<script type="text/javascript">
+		let n=prompt("INgrese cuantos fibonaccis quiere");
+		var fibonacci = [];
+		fibonacci[0] = 0;
+		fibonacci[1] = 1;
+		if(n==1)
+			document.write("0");
+
+		else
+		{
+			if(n<=0 || n>100)
+			{
+				alert("el rango es de 1 a 100");
+			}
+			
+		else
+		{
+			for (var i = 2; i < n; i++) {
+			  fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+			}
+			document.write(fibonacci);
+		}
+			
+		}
+		
+
+	</script>
+		
+	
+			
+
+</body>
+</html>

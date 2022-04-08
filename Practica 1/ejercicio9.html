@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>  
+	
+</head>
+<body>
+	<h1 align="center">PRACTICA 1</h1>
+	<h2>Ejercicio 9</h2>
+	
+	<script type="text/javascript">
+		let manoyo = prompt("Ingrese Piedra papel o tijera");
+		let manopc = "";
+		let aleatorio = Math.random()*3;
+		aleatorio = Math.floor(aleatorio+1)
+		
+		if(aleatorio==1){
+			manopc="piedra";
+
+		}if(aleatorio==2){
+			manopc="papel";
+			
+		}if(aleatorio==3){
+			manopc="tijera";
+			
+		}
+
+		alert("Elegiste: "+manoyo+" la pc escogio: " + manopc);
+		if(manopc==manoyo)
+			alert("Empate");
+		if(manoyo=="piedra" && manopc=="tijera")
+		{
+			alert("Ganaste ");
+
+		}
+		if(manoyo=="papel" && manopc=="piedra")
+		{
+			alert("Ganaste ");
+
+		}
+		if(manoyo=="tijera" && manopc=="papel")
+		{
+			alert("Ganaste ");
+		}
+		if(manopc=="piedra" && manoyo=="tijera")
+		{
+			alert("Perdiste ");
+
+		}
+		if(manopc=="papel" && manoyo=="piedra")
+		{
+			alert("Perdiste ");
+
+		}
+		if(manopc=="tijera" && manoyo=="papel")
+		{
+			alert("Perdiste ");
+		}
+
+
+		
+
+	</script>
+		
+	
+			
+
+</body>
+</html>

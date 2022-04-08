@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>  
+	
+</head>
+<body>
+	<h1 align="center">PRACTICA 1</h1>
+	<h2>Ejercicio 10</h2>
+	<p>10. Crea una función que reciba 2 parámetros, precio e iva, y devuelva el precio con iva incluido. Si no recibe el iva,
+aplicará el 21 por ciento por defecto.</p>
+	
+	<script type="text/javascript">
+
+		const presiototal = (presio,iva)=>{
+			let total=presio+((presio*iva)/100);
+			alert("el presio total a pagar es: "+total);
+		}
+		let presio=prompt("ingrese el presio");
+		let iva=prompt("ingrese el iva");
+		presiototal(parseInt(presio),parseInt(iva));
+
+	</script>
+		
+	
+			
+
+</body>
+</html>

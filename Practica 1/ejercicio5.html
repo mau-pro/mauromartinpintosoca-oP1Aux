@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>  
+	
+</head>
+<body>
+	<h1 align="center">PRACTICA 1</h1>
+	<h2>Ejercicio 5</h2>
+	
+	<script type="text/javascript">
+		let palabra = prompt("ingrese la palabra");
+		let cont=0;
+		let vocales = ["a","e","i","o","u"];
+		for(let j=0;j<(palabra.length);j++)
+			{
+				for(let i=0;i<5;i++){
+					if(palabra[j]==vocales[i])
+					{
+						cont++;
+					}
+
+				}
+				
+			}
+		alert("La palabra tiene" + cont + "vocales");
+		
+		
+	</script>
+		
+	
+			
+
+</body>
+</html>

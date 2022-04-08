@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>  
+	
+</head>
+<body>
+	<h1 align="center">PRACTICA 1</h1>
+	<h2>Ejercicio 6</h2>
+	
+	<script type="text/javascript">
+		let respuesta= "";
+		let cadena = prompt("introdusca una frase");
+		let primero = "(";
+		let ultimo = ")";
+		let p=cadena.indexOf(primero);
+		let u = cadena.lastIndexOf(ultimo);
+		if(p === -1 && u === -1)
+		{
+			alert(respuesta);
+		}
+		else{
+			if(p != -1 && u == -1){
+				respuesta = cadena.substring(p+1,cadena.length);
+				alert(respuesta);
+			}
+			respuesta = cadena.substring(p+1,u);
+			alert(respuesta);
+		}
+
+
+
+		
+	</script>
+		
+	
+			
+
+</body>
+</html>
